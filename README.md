@@ -59,3 +59,7 @@ If you hunt several organizations' workspaces, the report names all of them, so 
 - The thresholds come from measured traffic on one estate and one framework. Expect to tune them on yours.
 - The queries were written for, and have only run through, a guarded query tool: per-table lookback caps, a row cap, hashed identities, and no `let` or `union`. They are plain KQL and should run elsewhere.
 - `BEHAVIOUR` means an agent may be driving the activity. Only a marker names a framework, and only the organization that commissioned a test can confirm it was authorized.
+
+## License
+
+MIT; see [LICENSE](LICENSE). The parts adapted from ThreatDefence's agentic-attack-detections keep their own MIT notice, which is at the end of the agent file.
