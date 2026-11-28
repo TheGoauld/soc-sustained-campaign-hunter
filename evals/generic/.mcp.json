@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sql": {
+      "command": "node",
+      "args": ["--disable-warning=ExperimentalWarning", "${CLAUDE_PLUGIN_ROOT}/server/server.mjs"]
+    }
+  }
+}

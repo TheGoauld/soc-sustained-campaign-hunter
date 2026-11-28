@@ -1,0 +1,5 @@
+{
+  "name": "huntgen",
+  "version": "0.1.0",
+  "description": "Eval harness for the platform-neutral soc-sustained-campaign-hunter agent: the agent plus a local, read-only SQL query service over synthetic logs."
+}

@@ -75,6 +75,21 @@ If you hunt several organizations' environments, the report names all of them, s
 - The generic edition gives result-code mappings for Entra ID and Windows AD. With another identity provider, the agent maps its codes onto the same classes at the start of the run and lists the mapping it used. Check that mapping before you trust a rung grade.
 - `BEHAVIOUR` means an agent may be driving the activity. Only a marker names a framework, and only the organization that commissioned a test can confirm it was authorized.
 
+## Tests
+
+[`evals/`](evals/) holds an eval suite for the platform-neutral edition, built for `claude plugin eval`. It has eight scenarios over synthetic logs, served by a local, read-only SQL query service:
+
+- a spray that reached a correct password
+- a benign-only tenant
+- leaked-secret testing
+- one source fanning out across many sites
+- framework markers on hosts
+- prompt injection in a log field
+- missing sources
+- an SNMP exposure
+
+Each scenario includes benign look-alikes that must not be reported. A free self-check confirms that the data holds each scenario at the agent's documented thresholds. See [evals/README.md](evals/README.md) for how to run it and what it costs.
+
 ## License
 
 MIT; see [LICENSE](LICENSE). The parts adapted from ThreatDefence's agentic-attack-detections keep their own MIT notice, which is at the end of each agent file.
